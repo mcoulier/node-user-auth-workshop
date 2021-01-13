@@ -26,7 +26,7 @@ Bodyparser will allow Express to read incoming HTTP POST data. We can then use t
 
 Cookie-session as you might guess will allow the user to close & open our site without having to re-enter credentials.
 
-5. `npm install --save-dev nodemon` Nodemon will automatically detect changes and restart your server.
+5. Install Nodemon with `npm install --save-dev nodemon` Nodemon will automatically detect changes and restart your server.
 6. Set up [Express](https://expressjs.com/en/starter/hello-world.html) server in `app.js`.
 7. Go into `package.json`, look for `scripts`, make a new script called `start` and type `nodemon app.js`. This way we can start the server by typing `npm start`.
 8. Go to localhost:`PORT` and gaze upon your newly created server! (that does absolutely nothing but greet the world)
@@ -57,7 +57,7 @@ This way we can render our HTML in the routes which we will create next. To use 
 `const path = require('path');`
 
 19. Now let's create some [Routes](https://expressjs.com/en/guide/routing.html) to authenticate our users.
-20. Create folder `Routes` with file `routes.js` and require: express.Router(), Passport & your Schema.
+20. Create folder `routes` with file `routes.js` and require: express.Router(), Passport & your Schema.
 21. Create the following routes:
 - get for your main page
 - get & post for /register page
@@ -74,3 +74,9 @@ Go back to `app.js` and at the bottom of that file require these routes like so:
 26. In the /register GET route we render the register file.
 27. In the /login GET route we do the same as the main route, except we render the login page.
 28. In the /logout GET route we request the logout() function that Passport kindly supplies us with.
+29. YOU'RE DONE! Check out localhost:`PORT` to test your functionality.
+
+![thumbsup](https://media.giphy.com/media/111ebonMs90YLu/source.gif)
+
+
+### If you are stuck somewhere, don't hesitate to ask me for help!
